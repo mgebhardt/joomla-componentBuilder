@@ -1,3 +1,10 @@
+#===============================================================================
+# @version:		1.0.0
+# @summary:		This python script creates install archives for Joomla componentes
+# @copyright:	(C) 2012 Mathias Gebhardt
+# @license:		GNU General Public License version 2 or later; see LICENSE.txt
+#===============================================================================
+
 from xml.dom.minidom import parse
 import zipfile
 import os
