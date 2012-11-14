@@ -6,7 +6,7 @@ import sys
 # Change to components root directory
 os.chdir('..')
 
-# @TODO: method to get manifest file
+# TODO: method to get manifest file
 file = open('osbit.xml', 'r')
 data = file.read()
 file.close()
@@ -29,6 +29,7 @@ folders.append(dom.getElementsByTagName('media')[0].attributes['folder'].value)
 folders.append('language')
 
 # create file name for archive
+# TODo: use component Name here
 zipFileName = os.path.join('releases', 'com_osbit-{0}.zip'.format(version))
 #print zipFileName
 
