@@ -17,7 +17,8 @@ import re
 #===============================================================================
 def version_compare(version1, version2):
     #===========================================================================
-    # 
+    # Konverts the release keywords to numbers
+    # some text < dev < alpha = a < beta = b < RC = rc < # < pl = p < ''
     #===========================================================================
     def text_to_number(text):
         text = text.lower()
