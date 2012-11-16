@@ -16,14 +16,35 @@ System requirements
 ===================
 
 Python 2.7
+
 A Joomla! component development directory
 
 Some notes
 ==========
 
-This script will also read the folder names for frontend, backend and media folder from
-manifest. So just run this script and be happy. If you need some language files during
-installation you have to place them in rootOfYourComponent/language/ folder.
+This script will also read the folder names for frontend, backend and media
+folder from manifest. So just run this script and be happy. If you need some
+language files during installation you have to place them in
+rootOfYourComponent/language/ folder.
 
-The only working/needed script is build.py. All other script are test script to test
-some funktions.
+The only working/needed script is build.py. All other script are test script to
+test some funktions.
+
+Release notes
+=============
+
+Version 1.0.0
+=============
+
+Basic build functionality. This script only creates the zip archive.
+
+Run this script from a subfolder of the component's root directory (e.g. /tools)
+
+Searchs for manifest file in directory above.
+
+Reads component's name, version and frontend, backend and media folder from
+manifest file
+
+Creats the zip archive /releases/<name>-<version>.zip with the content of the
+frontend, backend and media folder, all not hidden files (starts not with a .)
+of the root directory and the content of /language folder.
