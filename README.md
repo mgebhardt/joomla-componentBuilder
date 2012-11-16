@@ -48,3 +48,14 @@ manifest file
 Creats the zip archive /releases/<name>-<version>.zip with the content of the
 frontend, backend and media folder, all not hidden files (starts not with a .)
 of the root directory and the content of /language folder.
+
+Version 1.1.0
+=============
+
+Add update server functions.
+
+Searchs also for a updateserver section in manifest file. If there is a
+updateserver section it downloads this file and adds a new update section by
+copying the first one and writes the new file to
+/releases/<fileNameFromServerTag>
+
